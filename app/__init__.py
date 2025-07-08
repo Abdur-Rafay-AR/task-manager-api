@@ -19,6 +19,9 @@ def create_app():
     jwt.init_app(app)
     CORS(app)
 
+    # Import models to ensure they're registered with SQLAlchemy
+    from . import models
+
     from .routes import task_bp
     from .auth import auth_bp
 
