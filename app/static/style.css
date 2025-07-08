@@ -374,6 +374,19 @@ body {
     transform: translateY(-2px);
 }
 
+/* Light mode specific styling for secondary button */
+body.light-mode .btn-secondary {
+    color: var(--text-primary);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.3);
+    color: var(--text-primary);
+}
+
 .btn-success {
     background: var(--success-gradient);
     color: white;
@@ -1025,7 +1038,15 @@ body.light-mode .logout-btn:hover {
     color: #dc2626;
 }
 
-body.light-mode .btn {
+body.light-mode .btn-primary {
+    color: white;
+}
+
+body.light-mode .btn-success {
+    color: white;
+}
+
+body.light-mode .btn-danger {
     color: white;
 }
 
